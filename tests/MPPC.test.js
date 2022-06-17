@@ -86,8 +86,8 @@ describe('MPPC Tests', function () {
     await admin.withNFT.grantRole(getRole('MINTER_ROLE'), admin.address)
     await admin.withNFT.grantRole(getRole('CURATOR_ROLE'), admin.address)
 
-    const splitter = await deploy('RoyaltySplitter', [recipient1.address, recipient2.address], [25, 75])
-    await bindContract('withSplitter', 'RoyaltySplitter', splitter, signers)
+    const splitter = await deploy('PaymentSplitter', [recipient1.address, recipient2.address], [25, 75])
+    await bindContract('withSplitter', 'PaymentSplitter', splitter, signers)
     
     this.signers = { 
       admin,
