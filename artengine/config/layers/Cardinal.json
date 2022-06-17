@@ -1,0 +1,569 @@
+{
+  "testnet": [
+    {
+      "name": "Background",
+      "visible": true,
+      "order": 1,
+      "attributes": {
+        "Boracay": {
+          "id": 1096,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/1-Background/Boracay#2.png",
+          "weight": 2
+        },
+        "Chocolate Hills": {
+          "id": 1097,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/1-Background/Chocolate Hills#13.png",
+          "weight": 13
+        },
+        "El Nido": {
+          "id": 1098,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/1-Background/El Nido#4.png",
+          "weight": 4
+        },
+        "Intramuros": {
+          "id": 1099,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/1-Background/Intramuros#14.png",
+          "weight": 14
+        },
+        "Mayon Volcano": {
+          "id": 1100,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/1-Background/Mayon Volcano#11.png",
+          "weight": 11
+        },
+        "Oslob": {
+          "id": 1101,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/1-Background/Oslob#6.png",
+          "weight": 6
+        },
+        "Pansol": {
+          "id": 1102,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/1-Background/Pansol#18.png",
+          "weight": 18
+        },
+        "Samal": {
+          "id": 1103,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/1-Background/Samal#9.png",
+          "weight": 9
+        },
+        "Siargao": {
+          "id": 1104,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/1-Background/Siargao#7.png",
+          "weight": 7
+        },
+        "Vigan": {
+          "id": 1105,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/1-Background/Vigan#16.png",
+          "weight": 16
+        }
+      }
+    },
+    {
+      "name": "Color",
+      "visible": true,
+      "order": 2,
+      "attributes": {
+        "Blue 5": {
+          "id": 1106,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/2-Color/Blue 5#6.png",
+          "weight": 6
+        },
+        "Dark Gray": {
+          "id": 1107,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/2-Color/Dark Gray#15.png",
+          "weight": 15
+        },
+        "Gray 5": {
+          "id": 1108,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/2-Color/Gray 5#13.png",
+          "weight": 13
+        },
+        "Gray": {
+          "id": 1109,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/2-Color/Gray#11.png",
+          "weight": 11
+        },
+        "Green 5": {
+          "id": 1110,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/2-Color/Green 5#7.png",
+          "weight": 7
+        },
+        "Orange 5": {
+          "id": 1111,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/2-Color/Orange 5#12.png",
+          "weight": 12
+        },
+        "Orange": {
+          "id": 1112,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/2-Color/Orange#10.png",
+          "weight": 10
+        },
+        "Pink": {
+          "id": 1113,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/2-Color/Pink#9.png",
+          "weight": 9
+        },
+        "Red 2": {
+          "id": 1114,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/2-Color/Red 2#4.png",
+          "weight": 4
+        },
+        "Red 5": {
+          "id": 1115,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/2-Color/Red 5#8.png",
+          "weight": 8
+        },
+        "Yellow": {
+          "id": 1116,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/2-Color/Yellow#5.png",
+          "weight": 5
+        }
+      }
+    },
+    {
+      "name": "Clothing",
+      "visible": true,
+      "order": 3,
+      "attributes": {
+        "CL 1": {
+          "id": 1117,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 1#71.png",
+          "weight": 71
+        },
+        "CL 10": {
+          "id": 1118,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 10#80.png",
+          "weight": 80
+        },
+        "CL 11": {
+          "id": 1119,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 11#81.png",
+          "weight": 81
+        },
+        "CL 12": {
+          "id": 1120,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 12#82.png",
+          "weight": 82
+        },
+        "CL 13": {
+          "id": 1121,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 13#83.png",
+          "weight": 83
+        },
+        "CL 14": {
+          "id": 1122,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 14#84.png",
+          "weight": 84
+        },
+        "CL 15": {
+          "id": 1123,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 15#85.png",
+          "weight": 85
+        },
+        "CL 16": {
+          "id": 1124,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 16#86.png",
+          "weight": 86
+        },
+        "CL 17": {
+          "id": 1125,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 17#87.png",
+          "weight": 87
+        },
+        "CL 18": {
+          "id": 1126,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 18#88.png",
+          "weight": 88
+        },
+        "CL 19": {
+          "id": 1127,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 19#89.png",
+          "weight": 89
+        },
+        "CL 2": {
+          "id": 1128,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 2#72.png",
+          "weight": 72
+        },
+        "CL 20": {
+          "id": 1129,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 20#90.png",
+          "weight": 90
+        },
+        "CL 3": {
+          "id": 1130,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 3#73.png",
+          "weight": 73
+        },
+        "CL 4": {
+          "id": 1131,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 4#74.png",
+          "weight": 74
+        },
+        "CL 5": {
+          "id": 1132,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 5#75.png",
+          "weight": 75
+        },
+        "CL 6": {
+          "id": 1133,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 6#76.png",
+          "weight": 76
+        },
+        "CL 7": {
+          "id": 1134,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 7#77.png",
+          "weight": 77
+        },
+        "CL 8": {
+          "id": 1135,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 8#78.png",
+          "weight": 78
+        },
+        "CL 9": {
+          "id": 1136,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/3-Clothing/CL 9#79.png",
+          "weight": 79
+        }
+      }
+    },
+    {
+      "name": "Rank",
+      "visible": true,
+      "order": 4,
+      "attributes": {
+        "Associate": {
+          "id": 1137,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/4-Rank/Associate#22.png",
+          "weight": 22
+        },
+        "Boss": {
+          "id": 1138,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/4-Rank/Boss#1.png",
+          "weight": 1
+        },
+        "Capos": {
+          "id": 1139,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/4-Rank/Capos#11.png",
+          "weight": 11
+        },
+        "Member": {
+          "id": 1140,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/4-Rank/Member#64.png",
+          "weight": 64
+        },
+        "Underboss": {
+          "id": 1141,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/4-Rank/Underboss#2.png",
+          "weight": 2
+        }
+      }
+    },
+    {
+      "name": "Element",
+      "visible": true,
+      "order": 5,
+      "attributes": {
+        "Air": {
+          "id": 1142,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/5-Element/Air#6.png",
+          "weight": 6
+        },
+        "Bug": {
+          "id": 1143,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/5-Element/Bug#15.png",
+          "weight": 15
+        },
+        "Electric": {
+          "id": 1144,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/5-Element/Electric#3.png",
+          "weight": 3
+        },
+        "Fighting": {
+          "id": 1145,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/5-Element/Fighting#13.png",
+          "weight": 13
+        },
+        "Fire": {
+          "id": 1146,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/5-Element/Fire#4.png",
+          "weight": 4
+        },
+        "Grass": {
+          "id": 1147,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/5-Element/Grass#14.png",
+          "weight": 14
+        },
+        "Ice": {
+          "id": 1148,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/5-Element/Ice#8.png",
+          "weight": 8
+        },
+        "Plant": {
+          "id": 1149,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/5-Element/Plant#9.png",
+          "weight": 9
+        },
+        "Poison": {
+          "id": 1150,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/5-Element/Poison#11.png",
+          "weight": 11
+        },
+        "Psychic": {
+          "id": 1151,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/5-Element/Psychic#12.png",
+          "weight": 12
+        },
+        "Rock": {
+          "id": 1152,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/5-Element/Rock#7.png",
+          "weight": 7
+        },
+        "Steel": {
+          "id": 1153,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/5-Element/Steel#10.png",
+          "weight": 10
+        },
+        "Water": {
+          "id": 1154,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/5-Element/Water#5.png",
+          "weight": 5
+        }
+      }
+    },
+    {
+      "name": "Sunglasses",
+      "visible": true,
+      "order": 6,
+      "attributes": {
+        "Beach": {
+          "id": 1155,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/6-Sunglasses/Beach#7.png",
+          "weight": 7
+        },
+        "HJ": {
+          "id": 1156,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/6-Sunglasses/HJ#13.png",
+          "weight": 13
+        },
+        "Heart": {
+          "id": 1157,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/6-Sunglasses/Heart#16.png",
+          "weight": 16
+        },
+        "JL": {
+          "id": 1158,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/6-Sunglasses/JL#11.png",
+          "weight": 11
+        },
+        "None": {
+          "id": 1159,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/6-Sunglasses/None#22.png",
+          "weight": 22
+        },
+        "Palm Tree": {
+          "id": 1160,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/6-Sunglasses/Palm Tree#4.png",
+          "weight": 4
+        },
+        "Thug": {
+          "id": 1161,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/6-Sunglasses/Thug#9.png",
+          "weight": 9
+        },
+        "Wood": {
+          "id": 1162,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/6-Sunglasses/Wood#18.png",
+          "weight": 18
+        }
+      }
+    },
+    {
+      "name": "Hat",
+      "visible": true,
+      "order": 7,
+      "attributes": {
+        "Chef": {
+          "id": 1163,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/Chef#12.png",
+          "weight": 12
+        },
+        "Cowboy": {
+          "id": 1164,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/Cowboy#5.png",
+          "weight": 5
+        },
+        "Detective": {
+          "id": 1165,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/Detective#7.png",
+          "weight": 7
+        },
+        "General": {
+          "id": 1166,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/General#9.png",
+          "weight": 9
+        },
+        "Halo": {
+          "id": 1167,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/Halo#18.png",
+          "weight": 18
+        },
+        "Hard Hat": {
+          "id": 1168,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/Hard Hat#11.png",
+          "weight": 11
+        },
+        "MPPC Black": {
+          "id": 1169,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/MPPC Black#1.png",
+          "weight": 1
+        },
+        "MPPC Blue": {
+          "id": 1170,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/MPPC Blue#2.png",
+          "weight": 2
+        },
+        "Mexican": {
+          "id": 1171,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/Mexican#14.png",
+          "weight": 14
+        },
+        "None": {
+          "id": 1172,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/None#19.png",
+          "weight": 19
+        },
+        "Pilot": {
+          "id": 1173,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/Pilot#10.png",
+          "weight": 10
+        },
+        "Pirate": {
+          "id": 1174,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/Pirate#4.png",
+          "weight": 4
+        },
+        "Red Baseball": {
+          "id": 1175,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/Red Baseball#15.png",
+          "weight": 15
+        },
+        "Spinner": {
+          "id": 1176,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/Spinner#16.png",
+          "weight": 16
+        },
+        "Straw": {
+          "id": 1177,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/Straw#17.png",
+          "weight": 17
+        },
+        "Sushi Chef Headband": {
+          "id": 1178,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/Sushi Chef Headband#13.png",
+          "weight": 13
+        },
+        "Toga": {
+          "id": 1179,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/Toga#8.png",
+          "weight": 8
+        },
+        "Vikings": {
+          "id": 1180,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/Vikings#6.png",
+          "weight": 6
+        },
+        "Wizard": {
+          "id": 1181,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Cardinal/7-Hat/Wizard#3.png",
+          "weight": 3
+        }
+      }
+    }
+  ]
+}

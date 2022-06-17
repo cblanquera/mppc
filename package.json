@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "hardhat test",
+    "setup": "node artengine/scripts/config_layers.js",
+    "build": "node artengine/scripts/build_collection.js",
+    "pixelate": "node artengine/scripts/build_pixels.js",
+    "rarity": "node artengine/scripts/build_rarity.js",
+    "pinata": "node artengine/scripts/upload_to_pinata.js",
+    "nft.storage": "node artengine/scripts/upload_to_nft.storage.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.8",
+    "@nomiclabs/hardhat-waffle": "2.0.1",
+    "@openzeppelin/contracts": "4.4.2",
+    "@pinata/sdk": "1.1.24",
+    "axios": "0.26.1",
+    "bottleneck": "2.19.5",
+    "canvas": "^2.8.0",
+    "dotenv": "^14.2.0",
+    "chai": "4.3.4",
+    "erc721b": "0.2.1",
+    "ercx": "^0.0.3",
+    "eth-gas-reporter": "git+https://github.com/lucaperret/eth-gas-reporter#6ac872b599adcaa8aab40808576e769c6872eb38",
+    "ethereum-waffle": "3.4.0",
+    "ethers": "5.4.1",
+    "form-data": "4.0.0",
+    "fs-extra": "10.0.1",
+    "hardhat": "2.4.3",
+    "hardhat-gas-reporter": "1.0.4",
+    "ipfs-only-hash": "4.0.0",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solhint": "^3.3.7",
+    "solhint-plugin-prettier": "^0.0.5"
+  }
+}

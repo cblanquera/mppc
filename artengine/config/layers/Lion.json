@@ -1,0 +1,563 @@
+{
+  "testnet": [
+    {
+      "name": "Background",
+      "visible": true,
+      "order": 1,
+      "attributes": {
+        "Boracay": {
+          "id": 1350,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/1-Background/Boracay#2.png",
+          "weight": 2
+        },
+        "Chocolate Hills": {
+          "id": 1351,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/1-Background/Chocolate Hills#13.png",
+          "weight": 13
+        },
+        "El Nido": {
+          "id": 1352,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/1-Background/El Nido#4.png",
+          "weight": 4
+        },
+        "Intramuros": {
+          "id": 1353,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/1-Background/Intramuros#14.png",
+          "weight": 14
+        },
+        "Mayon Volcano": {
+          "id": 1354,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/1-Background/Mayon Volcano#11.png",
+          "weight": 11
+        },
+        "Oslob": {
+          "id": 1355,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/1-Background/Oslob#6.png",
+          "weight": 6
+        },
+        "Pansol": {
+          "id": 1356,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/1-Background/Pansol#18.png",
+          "weight": 18
+        },
+        "Samal": {
+          "id": 1357,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/1-Background/Samal#9.png",
+          "weight": 9
+        },
+        "Siargao": {
+          "id": 1358,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/1-Background/Siargao#7.png",
+          "weight": 7
+        },
+        "Vigan": {
+          "id": 1359,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/1-Background/Vigan#16.png",
+          "weight": 16
+        }
+      }
+    },
+    {
+      "name": "Color",
+      "visible": true,
+      "order": 2,
+      "attributes": {
+        "Blue 5": {
+          "id": 1360,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/2-Color/Blue 5#7.png",
+          "weight": 7
+        },
+        "Gray 5": {
+          "id": 1361,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/2-Color/Gray 5#19.png",
+          "weight": 19
+        },
+        "Gray": {
+          "id": 1362,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/2-Color/Gray#12.png",
+          "weight": 12
+        },
+        "Green 5": {
+          "id": 1363,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/2-Color/Green 5#8.png",
+          "weight": 8
+        },
+        "Orange 5": {
+          "id": 1364,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/2-Color/Orange 5#13.png",
+          "weight": 13
+        },
+        "Orange": {
+          "id": 1365,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/2-Color/Orange#11.png",
+          "weight": 11
+        },
+        "Pink": {
+          "id": 1366,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/2-Color/Pink#10.png",
+          "weight": 10
+        },
+        "Red 1": {
+          "id": 1367,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/2-Color/Red 1#5.png",
+          "weight": 5
+        },
+        "Red 5": {
+          "id": 1368,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/2-Color/Red 5#6.png",
+          "weight": 6
+        },
+        "Yellow": {
+          "id": 1369,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/2-Color/Yellow#9.png",
+          "weight": 9
+        }
+      }
+    },
+    {
+      "name": "Clothing",
+      "visible": true,
+      "order": 3,
+      "attributes": {
+        "CL 1": {
+          "id": 1370,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 1#71.png",
+          "weight": 71
+        },
+        "CL 10": {
+          "id": 1371,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 10#80.png",
+          "weight": 80
+        },
+        "CL 11": {
+          "id": 1372,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 11#81.png",
+          "weight": 81
+        },
+        "CL 12": {
+          "id": 1373,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 12#82.png",
+          "weight": 82
+        },
+        "CL 13": {
+          "id": 1374,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 13#83.png",
+          "weight": 83
+        },
+        "CL 14": {
+          "id": 1375,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 14#84.png",
+          "weight": 84
+        },
+        "CL 15": {
+          "id": 1376,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 15#85.png",
+          "weight": 85
+        },
+        "CL 16": {
+          "id": 1377,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 16#86.png",
+          "weight": 86
+        },
+        "CL 17": {
+          "id": 1378,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 17#87.png",
+          "weight": 87
+        },
+        "CL 18": {
+          "id": 1379,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 18#88.png",
+          "weight": 88
+        },
+        "CL 19": {
+          "id": 1380,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 19#89.png",
+          "weight": 89
+        },
+        "CL 2": {
+          "id": 1381,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 2#72.png",
+          "weight": 72
+        },
+        "CL 20": {
+          "id": 1382,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 20#90.png",
+          "weight": 90
+        },
+        "CL 3": {
+          "id": 1383,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 3#73.png",
+          "weight": 73
+        },
+        "CL 4": {
+          "id": 1384,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 4#74.png",
+          "weight": 74
+        },
+        "CL 5": {
+          "id": 1385,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 5#75.png",
+          "weight": 75
+        },
+        "CL 6": {
+          "id": 1386,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 6#76.png",
+          "weight": 76
+        },
+        "CL 7": {
+          "id": 1387,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 7#77.png",
+          "weight": 77
+        },
+        "CL 8": {
+          "id": 1388,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 8#78.png",
+          "weight": 78
+        },
+        "CL 9": {
+          "id": 1389,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/3-Clothing/CL 9#79.png",
+          "weight": 79
+        }
+      }
+    },
+    {
+      "name": "Rank",
+      "visible": true,
+      "order": 4,
+      "attributes": {
+        "Associate": {
+          "id": 1390,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/4-Rank/Associate#22.png",
+          "weight": 22
+        },
+        "Boss": {
+          "id": 1391,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/4-Rank/Boss#1.png",
+          "weight": 1
+        },
+        "Capos": {
+          "id": 1392,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/4-Rank/Capos#11.png",
+          "weight": 11
+        },
+        "Member": {
+          "id": 1393,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/4-Rank/Member#64.png",
+          "weight": 64
+        },
+        "Underboss": {
+          "id": 1394,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/4-Rank/Underboss#2.png",
+          "weight": 2
+        }
+      }
+    },
+    {
+      "name": "Element",
+      "visible": true,
+      "order": 5,
+      "attributes": {
+        "Air": {
+          "id": 1395,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/5-Element/Air#6.png",
+          "weight": 6
+        },
+        "Bug": {
+          "id": 1396,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/5-Element/Bug#15.png",
+          "weight": 15
+        },
+        "Electric": {
+          "id": 1397,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/5-Element/Electric#3.png",
+          "weight": 3
+        },
+        "Fighting": {
+          "id": 1398,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/5-Element/Fighting#13.png",
+          "weight": 13
+        },
+        "Fire": {
+          "id": 1399,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/5-Element/Fire#4.png",
+          "weight": 4
+        },
+        "Grass": {
+          "id": 1400,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/5-Element/Grass#14.png",
+          "weight": 14
+        },
+        "Ice": {
+          "id": 1401,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/5-Element/Ice#8.png",
+          "weight": 8
+        },
+        "Plant": {
+          "id": 1402,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/5-Element/Plant#9.png",
+          "weight": 9
+        },
+        "Poison": {
+          "id": 1403,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/5-Element/Poison#11.png",
+          "weight": 11
+        },
+        "Psychic": {
+          "id": 1404,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/5-Element/Psychic#12.png",
+          "weight": 12
+        },
+        "Rock": {
+          "id": 1405,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/5-Element/Rock#7.png",
+          "weight": 7
+        },
+        "Steel": {
+          "id": 1406,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/5-Element/Steel#10.png",
+          "weight": 10
+        },
+        "Water": {
+          "id": 1407,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/5-Element/Water#5.png",
+          "weight": 5
+        }
+      }
+    },
+    {
+      "name": "Sunglasses",
+      "visible": true,
+      "order": 6,
+      "attributes": {
+        "Beach": {
+          "id": 1408,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/6-Sunglasses/Beach#7.png",
+          "weight": 7
+        },
+        "HJ": {
+          "id": 1409,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/6-Sunglasses/HJ#13.png",
+          "weight": 13
+        },
+        "Heart": {
+          "id": 1410,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/6-Sunglasses/Heart#16.png",
+          "weight": 16
+        },
+        "JL": {
+          "id": 1411,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/6-Sunglasses/JL#11.png",
+          "weight": 11
+        },
+        "None": {
+          "id": 1412,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/6-Sunglasses/None#22.png",
+          "weight": 22
+        },
+        "Palm Tree": {
+          "id": 1413,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/6-Sunglasses/Palm Tree#4.png",
+          "weight": 4
+        },
+        "Thug": {
+          "id": 1414,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/6-Sunglasses/Thug#9.png",
+          "weight": 9
+        },
+        "Wood": {
+          "id": 1415,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/6-Sunglasses/Wood#18.png",
+          "weight": 18
+        }
+      }
+    },
+    {
+      "name": "Hat",
+      "visible": true,
+      "order": 7,
+      "attributes": {
+        "Chef": {
+          "id": 1416,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/Chef#12.png",
+          "weight": 12
+        },
+        "Cowboy": {
+          "id": 1417,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/Cowboy#5.png",
+          "weight": 5
+        },
+        "Detective": {
+          "id": 1418,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/Detective#7.png",
+          "weight": 7
+        },
+        "General": {
+          "id": 1419,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/General#9.png",
+          "weight": 9
+        },
+        "Halo": {
+          "id": 1420,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/Halo#18.png",
+          "weight": 18
+        },
+        "Hard Hat": {
+          "id": 1421,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/Hard Hat#11.png",
+          "weight": 11
+        },
+        "MPPC Black": {
+          "id": 1422,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/MPPC Black#1.png",
+          "weight": 1
+        },
+        "MPPC Blue": {
+          "id": 1423,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/MPPC Blue#2.png",
+          "weight": 2
+        },
+        "Mexican": {
+          "id": 1424,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/Mexican#14.png",
+          "weight": 14
+        },
+        "None": {
+          "id": 1425,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/None#19.png",
+          "weight": 19
+        },
+        "Pilot": {
+          "id": 1426,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/Pilot#10.png",
+          "weight": 10
+        },
+        "Pirate": {
+          "id": 1427,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/Pirate#4.png",
+          "weight": 4
+        },
+        "Red Baseball": {
+          "id": 1428,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/Red Baseball#15.png",
+          "weight": 15
+        },
+        "Spinner": {
+          "id": 1429,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/Spinner#16.png",
+          "weight": 16
+        },
+        "Straw": {
+          "id": 1430,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/Straw#17.png",
+          "weight": 17
+        },
+        "Sushi Chef Headband": {
+          "id": 1431,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/Sushi Chef Headband#13.png",
+          "weight": 13
+        },
+        "Toga": {
+          "id": 1432,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/Toga#8.png",
+          "weight": 8
+        },
+        "Vikings": {
+          "id": 1433,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/Vikings#6.png",
+          "weight": 6
+        },
+        "Wizard": {
+          "id": 1434,
+          "visible": true,
+          "path": "/Users/cblanquera/server/projects/mppc/artengine/layers/testnet/Lion/7-Hat/Wizard#3.png",
+          "weight": 3
+        }
+      }
+    }
+  ]
+}
