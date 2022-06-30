@@ -118,3 +118,4 @@ artifacts/contracts/mock
 cache/
 
 *.dbg.json
+.artengine

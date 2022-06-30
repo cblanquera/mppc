@@ -36,9 +36,7 @@ module.exports = {
       scanner: 'https://rinkeby.etherscan.io',
       opensea: 'https://testnets.opensea.io',
       accounts: [process.env.BLOCKCHAIN_RINKEBY_PRIVATE_KEY],
-      contracts: {
-        nft: process.env.BLOCKCHAIN_RINKEBY_NFT_ADDRESS
-      }
+      contracts: {}
     },
     ethereum: {
       url: "https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
@@ -46,9 +44,7 @@ module.exports = {
       scanner: 'https://etherscan.io',
       opensea: 'https://opensea.io',
       accounts: [process.env.BLOCKCHAIN_ETHEREUM_PRIVATE_KEY],
-      contracts: {
-        nft: process.env.BLOCKCHAIN_ETHEREUM_NFT_ADDRESS
-      }
+      contracts: {}
     },
   },
   solidity: {
