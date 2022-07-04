@@ -159,7 +159,7 @@ export class MintPage implements OnInit {
   onReceipt(){     
     this.receiptDisplay = ''; 
     this.receiptDisplay += `Max Mint Per Wallet : ${this.chainModel.maxPerWallet} <br>`;
-    this.receiptDisplay += `${this.numMint} MPPC${(this.numMint>1?'s':'')} cost for ${(this.chainModel.mintPrice/Math.pow(10,18)*this.numMint).toFixed(2)} ETH`;
+    this.receiptDisplay += `${this.numMint} MPPC${(this.numMint>1?'s':'')} cost for ${(this.chainModel.mintPrice/Math.pow(10,18)*this.numMint).toFixed(3)} ETH`;
   } 
 
   onNumMint(val){
