@@ -23,6 +23,7 @@ import "erc721b/contracts/ERC721B.sol";
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
+import "@openzeppelin/contracts/finance/PaymentSplitter.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
 
@@ -62,9 +63,9 @@ contract MPPC is
   //base URI
   string private _baseTokenURI;
   //maximum amount that can be purchased per wallet in the public sale
-  uint256 public maxPerWallet = 5;
+  uint256 public maxPerWallet = 2;
   //the sale price per token
-  uint256 public mintPrice = 0.03 ether;
+  uint256 public mintPrice = 0.025 ether;
   //where 10000 == 100.00%
   uint256 public creatorFees = 1000;
   
@@ -93,19 +94,13 @@ contract MPPC is
   /**
    * @dev Override isApprovedForAll to whitelist marketplaces 
    * to enable gas-less listings.
-   *
-   * OS Rinkeby: 0xf57b2c51ded3a29e6891aba85459d600256cf317
-   * OS Mainnet: 0xa5409ec958c83c3f309868babaca7c86dcb077c1
    */
   function isApprovedForAll(
     address owner, 
     address operator
   ) public view override(ERC721B, IERC721) returns(bool) {
-    if (hasRole(_APPROVED_ROLE, operator)) {
-      return true;
-    }
-
-    return super.isApprovedForAll(owner, operator);
+    return hasRole(_APPROVED_ROLE, operator) 
+      || super.isApprovedForAll(owner, operator);
   }
 
   /**
@@ -160,10 +155,11 @@ contract MPPC is
   }
 
   /**
-   * @dev Allows anyone to gemintt a token that was approved by the owner
+   * @dev Allows anyone to mint a token that was approved by the owner
    */
   function mint(
-    uint256 quantity, 
+    uint256 quantity,
+    uint256 maxMint, 
     bytes memory proof
   ) external payable nonReentrant {
     address recipient = _msgSender();
@@ -172,7 +168,7 @@ contract MPPC is
     if (quantity == 0 
       //the quantity here plus the current amount already minted 
       //should be less than the max purchase amount
-      || (quantity + minted[recipient]) > maxPerWallet
+      || (quantity + minted[recipient]) > maxMint
       //the value sent should be the price times quantity
       || (quantity * mintPrice) > msg.value
       //the quantity being minted should not exceed the max supply
@@ -180,7 +176,7 @@ contract MPPC is
       //make sure the minter signed this off
       || !hasRole(_MINTER_ROLE, ECDSA.recover(
         ECDSA.toEthSignedMessageHash(
-          keccak256(abi.encodePacked("mint", recipient))
+          keccak256(abi.encodePacked("mint", recipient, maxMint))
         ),
         proof
       ))
@@ -251,7 +247,7 @@ contract MPPC is
   }
 
   /**
-   * @dev Sets a new mint price
+   * @dev Sets a new teasury location
    */
   function setTreasury(address recipient) external onlyRole(_CURATOR_ROLE) {
     //can only be a contract
@@ -285,14 +281,10 @@ contract MPPC is
    * @dev Allows the proceeds to be withdrawn. This wont be allowed
    * until the collection is released to discourage rug pulls
    */
-  function withdraw() external onlyOwner nonReentrant {
-    //cannot withdraw without setting a treasury
-    if (treasury == address(0)
-      //cannot withdraw without setting a base URI first
-      || bytes(_baseTokenURI).length == 0
-    ) revert InvalidCall();
-  
-    payable(treasury).transfer(address(this).balance);
+  function withdraw(PaymentSplitter splitter) external onlyOwner nonReentrant {
+    //cannot withdraw without setting a base URI first
+    if (bytes(_baseTokenURI).length == 0) revert InvalidCall();
+    payable(splitter).transfer(address(this).balance);
   }
 
   // ============ Linear Overrides ============

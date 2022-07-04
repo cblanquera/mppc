@@ -1,5 +1,5 @@
 //to run this on testnet:
-// $ npx hardhat run scripts/deploy.js
+// $ npx hardhat run scripts/deploy/3-nft.js
 
 const hardhat = require('hardhat')
 
@@ -24,20 +24,12 @@ function getRole(name) {
 }
 
 //config
-const preview = ''
-const shares = []
-const recipients = []
+const preview = 'ipfs://QmcgyotM4Z2ErtJQfBTjx71crxXWPkuS25DSvbCGQvPd7n'
 
 async function main() {
   //get network and admin
   const network = hardhat.config.networks[hardhat.config.defaultNetwork]
   const admin = new ethers.Wallet(network.accounts[0])
-
-  console.log('Deploying PaymentSplitter ...')
-  const splitter = await deploy('PaymentSplitter', recipients, shares)
-  console.log('')
-  console.log('-----------------------------------')
-  console.log('PaymentSplitter deployed to:', splitter.address)
 
   console.log('Deploying MPPC ...')
   const nft = await deploy('MPPC', preview, admin.address)
@@ -63,9 +55,12 @@ async function main() {
   console.log(` - grantRole( ${getRole('MINTER_ROLE')}, ${admin.address} )`)
   console.log(` - grantRole( ${getRole('CURATOR_ROLE')}, ${admin.address} )`)
   console.log('')
-  console.log('In MPPC contract, set treasury')
+  console.log('In MPPC contract, set treasury, uri, sale state')
   console.log(` - ${network.scanner}/address/${nft.address}#writeContract`)
-  console.log(` - setTreasury( ${splitter.address} )`)
+  console.log(` - setTreasury( ${network.contracts.splitter2} )`)
+  console.log(` - setURI( ipfs://QmYvfwadbspBLYgCKf26sC1DWc4iPAa5EySeCkATmGL8Zp )`)
+  console.log(` - setMintPrice( Public 32000000000000000 )`)
+  
   console.log('')
 }
 

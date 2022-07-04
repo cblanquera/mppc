@@ -36,7 +36,11 @@ module.exports = {
       scanner: 'https://rinkeby.etherscan.io',
       opensea: 'https://testnets.opensea.io',
       accounts: [process.env.BLOCKCHAIN_RINKEBY_PRIVATE_KEY],
-      contracts: {}
+      contracts: {
+        nft: '0x94488c1c9481361E0eaBbDa44507f25eb8D94b88',
+        splitter1: '0xB4802938b69267c2EeE4074275aF2d225eC5D6Dd',
+        splitter2: '0xd7dEB657216Dc50D2D09D37c4602e6CC60A6804f'
+      }
     },
     ethereum: {
       url: "https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
@@ -44,7 +48,11 @@ module.exports = {
       scanner: 'https://etherscan.io',
       opensea: 'https://opensea.io',
       accounts: [process.env.BLOCKCHAIN_ETHEREUM_PRIVATE_KEY],
-      contracts: {}
+      contracts: {
+        nft: '',
+        splitter1: '',
+        splitter2: ''
+      }
     },
   },
   solidity: {
