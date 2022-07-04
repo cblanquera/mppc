@@ -53,9 +53,9 @@
                 
                   <div *ngIf="myUserAddress" class="c-action"> 
                     <h1>{{chainModel.totalSupply}}/{{chainModel.MAX_SUPPLY}}</h1>
-                    <p class="c-receipt">{{receiptDisplay}}</p>
+                    <p class="c-receipt" [innerHtml]="receiptDisplay"></p>
                     <ion-range min="1" max="{{chainModel.maxPerWallet}}" step="1" snaps="true" color="secondary"
-                    (ionChange)="onNumMint($event)"> 
+                    (ionChange)="onNumMint($event.detail.value)"> 
                     </ion-range> 
                     <button class="c-button-primary c-connect" (click)="onMint()">Mint</button>
                   </div>

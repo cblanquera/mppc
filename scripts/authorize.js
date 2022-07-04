@@ -6,11 +6,13 @@ const path = require('path')
 const hardhat = require('hardhat')
 const whitelist = require('../data/whitelist.json')
 
-function authorize(recipient) {
+function authorize(recipient, maxMint = 2) {
   return Buffer.from(
     ethers.utils.solidityKeccak256(
-      ['string', 'address'],
-      ['mint', recipient]
+      // ['string', 'address'],
+      // ['mint', recipient]
+      ['string', 'address', 'uint256'],
+      ['mint', recipient, maxMint]
     ).slice(2),
     'hex'
   )

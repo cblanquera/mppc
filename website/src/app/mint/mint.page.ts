@@ -11,7 +11,7 @@ import * as authorized from './authorized.json';
   styleUrls: ['./mint.page.scss'],
 })
 export class MintPage implements OnInit {  
-  numMint=0;
+  numMint=1;
   receiptDisplay='';
   myUserAddress = null;
   isChainLoaded = false;
@@ -82,6 +82,7 @@ export class MintPage implements OnInit {
       this.isChainLoaded = true; 
 
       await loading.dismiss();
+      this.onNumMint(1);
       this.onReceipt();
       resolve({});
     });
@@ -155,16 +156,14 @@ export class MintPage implements OnInit {
   }
  
 
-  onReceipt(){    
-    if(this.numMint == 0){
-      this.receiptDisplay = '';
-      return;
-    } 
-    this.receiptDisplay = `${this.numMint} MPPC${(this.numMint>1?'s':'')} cost for ${(this.chainModel.mintPrice/Math.pow(10,18)*this.numMint).toFixed(2)} ETH`;
+  onReceipt(){     
+    this.receiptDisplay = ''; 
+    this.receiptDisplay += `Max Mint Per Wallet : ${this.chainModel.maxPerWallet} <br>`;
+    this.receiptDisplay += `${this.numMint} MPPC${(this.numMint>1?'s':'')} cost for ${(this.chainModel.mintPrice/Math.pow(10,18)*this.numMint).toFixed(2)} ETH`;
   } 
 
-  onNumMint(ev){
-    this.numMint = ev.detail.value;
+  onNumMint(val){
+    this.numMint = val;
     this.onReceipt();
   }
 
