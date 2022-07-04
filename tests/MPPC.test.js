@@ -33,11 +33,11 @@ function getRole(name) {
   return '0x' + Buffer.from(ethers.utils.solidityKeccak256(['string'], [name]).slice(2), 'hex').toString('hex');
 }
 
-function authorize(recipient) {
+function authorize(recipient, maxMint) {
   return Buffer.from(
     ethers.utils.solidityKeccak256(
-      ['string', 'address'],
-      ['mint', recipient]
+      ['string', 'address', 'uint256'],
+      ['mint', recipient, maxMint]
     ).slice(2),
     'hex'
   )
@@ -55,7 +55,7 @@ describe('MPPC Tests', function () {
     //fix minting overrides
     //['mint(uint256,{})']
     //['mint(address,uint256)']
-    //['mint(uint256,bytes,{})']
+    //['mint(uint256,uint256,bytes,{})']
     for (let i = 0; i < signers.length; i++) {
       signers[i].withNFT.mint = function(...args) {
         if (args.length === 2) {
@@ -65,8 +65,8 @@ describe('MPPC Tests', function () {
           return signers[i].withNFT['mint(address,uint256)'](...args)
         }
 
-        if (args.length === 3) {
-          return signers[i].withNFT['mint(uint256,bytes)'](...args)
+        if (args.length === 4) {
+          return signers[i].withNFT['mint(uint256,uint256,bytes)'](...args)
         }
       }
     }
@@ -78,6 +78,7 @@ describe('MPPC Tests', function () {
       tokenOwner2, 
       tokenOwner3, 
       tokenOwner4,
+      tokenOwner5,
       recipient1,
       recipient2
     ] = signers
@@ -96,6 +97,7 @@ describe('MPPC Tests', function () {
       tokenOwner2, 
       tokenOwner3, 
       tokenOwner4,
+      tokenOwner5,
       recipient1,
       recipient2
     }
@@ -104,11 +106,11 @@ describe('MPPC Tests', function () {
   it('Should not mint', async function () {
     const { tokenOwner0 } = this.signers
     await expect(//sale not started
-      tokenOwner0.withNFT.mint(3, { value: 0 })
+      tokenOwner0.withNFT.mint(2, { value: 0 })
     ).to.be.revertedWith('InvalidCall()')
 
     await expect(//sale not started
-      tokenOwner0.withNFT.mint(8, { value: ethers.utils.parseEther('0.015') })
+      tokenOwner0.withNFT.mint(1, { value: ethers.utils.parseEther('0.05') })
     ).to.be.revertedWith('InvalidCall()')
   })
   
@@ -120,16 +122,17 @@ describe('MPPC Tests', function () {
   })
 
   it('Should whitelist mint', async function () {
-    const { admin, tokenOwner0, tokenOwner1 } = this.signers
+    const { admin, tokenOwner0 } = this.signers
   
-    await tokenOwner0.withNFT.mint(2, await admin.signMessage(
-      authorize(tokenOwner0.address)
+    await tokenOwner0.withNFT.mint(2, 5, await admin.signMessage(
+      authorize(tokenOwner0.address, 5)
     ), { value: ethers.utils.parseEther('0.06') })
     expect(await admin.withNFT.ownerOf(1)).to.equal(tokenOwner0.address)
+
     expect(await admin.withNFT.ownerOf(2)).to.equal(tokenOwner0.address)
   
-    await tokenOwner0.withNFT.mint(2, await admin.signMessage(
-      authorize(tokenOwner0.address)
+    await tokenOwner0.withNFT.mint(2, 5, await admin.signMessage(
+      authorize(tokenOwner0.address, 5)
     ), { value: ethers.utils.parseEther('0.06') })
     expect(await admin.withNFT.ownerOf(3)).to.equal(tokenOwner0.address)
     expect(await admin.withNFT.ownerOf(4)).to.equal(tokenOwner0.address)
@@ -138,26 +141,26 @@ describe('MPPC Tests', function () {
   it('Should not whitelist mint', async function () {
     const { admin, tokenOwner0, tokenOwner1 } = this.signers
     await expect(//minted > max mint
-      tokenOwner0.withNFT.mint(2, await admin.signMessage(
-        authorize(tokenOwner0.address)
+      tokenOwner0.withNFT.mint(2, 5, await admin.signMessage(
+        authorize(tokenOwner0.address, 5)
       ), { value: ethers.utils.parseEther('0.06') })
     ).to.be.revertedWith('InvalidCall()')
 
     await expect(//quantity > max mint
-      tokenOwner1.withNFT.mint(6, await admin.signMessage(
-        authorize(tokenOwner1.address)
+      tokenOwner1.withNFT.mint(6, 5, await admin.signMessage(
+        authorize(tokenOwner1.address, 5)
       ), { value: ethers.utils.parseEther('0.18') })
     ).to.be.revertedWith('InvalidCall()')
 
     await expect(//wrong amount
-      tokenOwner1.withNFT.mint(1, await admin.signMessage(
-        authorize(tokenOwner1.address)
+      tokenOwner1.withNFT.mint(1, 5, await admin.signMessage(
+        authorize(tokenOwner1.address, 5)
       ), { value: ethers.utils.parseEther('0.02') })
     ).to.be.revertedWith('InvalidCall()')
 
     await expect(//using another persons proof
-      tokenOwner0.withNFT.mint(1, await admin.signMessage(
-        authorize(tokenOwner1.address)
+      tokenOwner0.withNFT.mint(1, 5, await admin.signMessage(
+        authorize(tokenOwner1.address, 5)
       ), { value: ethers.utils.parseEther('0.03') })
     ).to.be.revertedWith('InvalidCall()')
   })
@@ -172,14 +175,14 @@ describe('MPPC Tests', function () {
   })
 
   it('Should mint', async function () {
-    const { admin, tokenOwner2, tokenOwner3 } = this.signers
+    const { admin, tokenOwner2, tokenOwner3, tokenOwner5 } = this.signers
     await tokenOwner2.withNFT.mint(1, { value: ethers.utils.parseEther('0.03') })
     await tokenOwner2.withNFT.mint(1, { value: ethers.utils.parseEther('0.03') })
-    await tokenOwner2.withNFT.mint(2, { value: ethers.utils.parseEther('0.06') })
+    await tokenOwner5.withNFT.mint(2, { value: ethers.utils.parseEther('0.06') })
     expect(await admin.withNFT.ownerOf(5)).to.equal(tokenOwner2.address)
     expect(await admin.withNFT.ownerOf(6)).to.equal(tokenOwner2.address)
-    expect(await admin.withNFT.ownerOf(7)).to.equal(tokenOwner2.address)
-    expect(await admin.withNFT.ownerOf(8)).to.equal(tokenOwner2.address)
+    expect(await admin.withNFT.ownerOf(7)).to.equal(tokenOwner5.address)
+    expect(await admin.withNFT.ownerOf(8)).to.equal(tokenOwner5.address)
 
     await admin.withNFT.mint(tokenOwner3.address, 2)
     expect(await admin.withNFT.ownerOf(9)).to.equal(tokenOwner3.address)
@@ -203,11 +206,11 @@ describe('MPPC Tests', function () {
     await admin.withNFT.setTreasury(admin.withSplitter.address)
 
     await expect(//no base uri set
-      admin.withNFT.withdraw()
+      admin.withNFT.withdraw(admin.withSplitter.address)
     ).to.be.revertedWith('InvalidCall()')
 
     await admin.withNFT.setBaseURI(this.base)
-    await admin.withNFT.withdraw()
+    await admin.withNFT.withdraw(admin.withSplitter.address)
     
     expect(parseFloat(
       ethers.utils.formatEther(await admin.provider.getBalance(

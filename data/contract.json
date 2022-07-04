@@ -1,8 +1,6 @@
 {
   "name": "Manila Pool Party Club",
   "description": "Manila Pool Party Club is an Exclusive NFT Club and the First & Only NFT project that showcases the Philippines as a world class tourist destination.",
-  "image": "https://pbs.twimg.com/profile_images/1511908887674249216/-CCk0Eyy_400x400.jpg",
-  "external_url": "https://www.katipunanpoolpartyclub.com/manilapoolpartyclub",
-  "seller_fee_basis_points": 1000,
-  "fee_recipient": ""
+  "image": "ipfs://QmPfe2Wr9SoSXS7qw9YPCgsf45SuSjH31mzeEVztEHSnf8",
+  "external_url": "https://www.katipunanpoolpartyclub.com/manilapoolpartyclub"
 }
