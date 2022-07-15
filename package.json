@@ -6,6 +6,7 @@
     "build": "node artengine/scripts/build_collection.js",
     "pixelate": "node artengine/scripts/build_pixels.js",
     "rarity": "node artengine/scripts/build_rarity.js",
+    "authorize":"npx hardhat run scripts/authorize.js",
     "pinata": "node artengine/scripts/upload_to_pinata.js",
     "nft.storage": "node artengine/scripts/upload_to_nft.storage.js"
   },
