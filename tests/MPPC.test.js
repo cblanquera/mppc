@@ -163,6 +163,18 @@ describe('MPPC Tests', function () {
         authorize(tokenOwner1.address, 5)
       ), { value: ethers.utils.parseEther('0.03') })
     ).to.be.revertedWith('InvalidCall()')
+
+    await expect(//invalid quantity
+      tokenOwner1.withNFT.mint(0, 5, await admin.signMessage(
+        authorize(tokenOwner1.address, 5)
+      ), { value: ethers.utils.parseEther('0.02') })
+    ).to.be.revertedWith('InvalidCall()')
+
+    await expect(//invalid quantity
+      tokenOwner1.withNFT.mint(0, 0, await admin.signMessage(
+        authorize(tokenOwner1.address, 0)
+      ), { value: ethers.utils.parseEther('0.02') })
+    ).to.be.revertedWith('InvalidCall()')
   })
 
   it('Should start sale', async function () {  
@@ -197,6 +209,10 @@ describe('MPPC Tests', function () {
 
     await expect(//invalid amount
       tokenOwner4.withNFT.mint(1, { value: ethers.utils.parseEther('0.02') })
+    ).to.be.revertedWith('InvalidCall()')
+
+    await expect(//invalid amount
+      tokenOwner4.withNFT.mint(0, { value: ethers.utils.parseEther('0.02') })
     ).to.be.revertedWith('InvalidCall()')
   })
 

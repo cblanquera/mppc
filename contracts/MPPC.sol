@@ -139,8 +139,6 @@ contract MPPC is
     if (recipient.code.length > 0
       //has the sale started?
       || !saleStarted
-      //valid amount?
-      || quantity == 0 
       //the quantity here plus the current amount already minted 
       //should be less than the max purchase amount
       || (quantity + minted[recipient]) > maxPerWallet
@@ -164,11 +162,9 @@ contract MPPC is
   ) external payable nonReentrant {
     address recipient = _msgSender();
 
-    //valid amount?
-    if (quantity == 0 
-      //the quantity here plus the current amount already minted 
-      //should be less than the max purchase amount
-      || (quantity + minted[recipient]) > maxMint
+    //the quantity here plus the current amount already minted 
+    //should be less than the max purchase amount
+    if ((quantity + minted[recipient]) > maxMint
       //the value sent should be the price times quantity
       || (quantity * mintPrice) > msg.value
       //the quantity being minted should not exceed the max supply
@@ -216,11 +212,8 @@ contract MPPC is
     address recipient,
     uint256 quantity
   ) external onlyRole(_MINTER_ROLE) nonReentrant {
-    //make sure recipient is a valid address
-    if (quantity == 0 
-      //the quantity being minted should not exceed the max supply
-      || (totalSupply() + quantity) > MAX_SUPPLY
-    ) revert InvalidCall();
+    //the quantity being minted should not exceed the max supply
+    if ((totalSupply() + quantity) > MAX_SUPPLY) revert InvalidCall();
 
     _safeMint(recipient, quantity);
   }
